@@ -1,14 +1,8 @@
 <?php
 
 return [
-    /**
-     * Application service providers.
-     */
     App\Providers\AppServiceProvider::class,
-
-    /**
-     * Webkul's service providers.
-     */
+    App\Providers\NewThemeServiceProvider::class,
     Webkul\Admin\Providers\AdminServiceProvider::class,
     Webkul\Attribute\Providers\AttributeServiceProvider::class,
     Webkul\BookingProduct\Providers\BookingProductServiceProvider::class,
@@ -43,4 +37,5 @@ return [
     Webkul\Tax\Providers\TaxServiceProvider::class,
     Webkul\Theme\Providers\ThemeServiceProvider::class,
     Webkul\User\Providers\UserServiceProvider::class,
+    Webkul\NewTheme\Providers\NewThemeServiceProvider::class,
 ];
